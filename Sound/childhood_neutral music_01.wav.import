@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dtg07w06eleqf"
+path="res://.godot/imported/childhood_neutral music_01.wav-a18662b967855016446a9d2ab43a95f2.sample"
+
+[deps]
+
+source_file="res://Sound/childhood_neutral music_01.wav"
+dest_files=["res://.godot/imported/childhood_neutral music_01.wav-a18662b967855016446a9d2ab43a95f2.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

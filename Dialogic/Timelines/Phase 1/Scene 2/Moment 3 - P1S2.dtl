@@ -1,0 +1,25 @@
+[signal arg="ruang_tamu"]
+[music path="res://Sound/responsibility.mp3" fade="0.0" volume="-10.0" bus="Music"]
+[wait time="3.0"]
+"Teman 1": Kami melihatmu kesulitan, jadi kami datang membantu!
+- Membiarkan teman membantu
+	Layla: Terima kasih, kalian memang teman terbaik!
+	Karakter utama merasa bersyukur memiliki teman yang peduli.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 1 - P1S3/
+- Menolak tawaran teman untuk membantu bawaan
+	Layla: Terima kasih, tapi tak perlu teman-teman. Aku bisa bawanya sendiri.
+	Karakter utama merasa bangga dengan kemandiriannya meskipun temannya ingin membantunya.
+	[signal arg="-5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 1 - P1S3/
+- Mengabaikan teman-teman dan pergi menjauh
+	[music path="res://Sound/childhood_bad ending.wav" fade="0.0" volume="-10.0" bus="Music"]
+	[background arg="res://Art/Ending/End3.png" fade="4.0"]
+	[wait time="6.0"]
+	Karakter utama menjadi songong hingga jauh pergi menuju ke tempat yang dia tidak kenali dan tersesat.
+	[wait time="0.7"]
+	[signal arg="end"]

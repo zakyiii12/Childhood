@@ -1,0 +1,42 @@
+[signal arg="lapangan"]
+[music path="res://Sound/childhood_neutral music_01.wav" fade="0.0" volume="-15.0" bus="Music"]
+[wait time="3.0"]
+"Teman 1": Ayo, cepat! Kita harus menangkap layangan itu sebelum terbang terlalu tinggi!
+- Ikut mengejar layangan
+	[wait time="2.0"]
+	Layla: Aku yang akan menangkapnya duluan!
+	"Teman 2": Hati - hati jangan jatuh, ya!
+	[wait time="3.0"]
+	Layla: Aku berhasil menangkapnya
+	"Teman 1": Awas! Ada motor itu.
+	Layla: Mana?!
+	"Teman 2": Awas!
+	[music path="res://Sound/childhood_bad ending.wav" fade="0.0" volume="-10.0" bus="Music"]
+	[sound path="res://Sound/crash.mp3" volume="0.0" bus="SFX"]
+	[background arg="res://Art/Ending/End1 Update.png" fade="4.0"]
+	[wait time="6.0"]
+	Layangan berhasil ditangkap, tetapi karakter utama tertabrak motor yang sedang melaju kencang. Karakter utama dilarikan ke rumah sakit terdekat.
+	[wait time="0.7"]
+	[signal arg="end"]
+- Lihat layangan dari kejauhan
+	Layla: Aku lagi gak pengen.
+	"Teman 2": Ya udah kalo begitu, aku ambil yah!
+	"Teman 1": Ayo, aku ikut ambilnya.
+	"Teman 2": Ayo!
+	[wait time="3.0"]
+	Karakter Utama melihat teman-temannya bahagia bermain mengejar layangan.
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment-2/
+- Suruh teman mengejar
+	Layla: Ayo kamu aja yang nangkapnya.
+	"Teman 2": Enak aja, kamu ngapain?
+	Layla: Ya nunggu sini lah.
+	"Teman 2": Awas aja kalo kamu colong nanti!
+	Layla: Gak bakalan, ngapain juga?
+	[wait time="3.0"]
+	Temannya berhasil mengambilnya walaupun dengan ekspresi acuh tak acuh kepada karakter utama.
+	[signal arg="-5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment-2/

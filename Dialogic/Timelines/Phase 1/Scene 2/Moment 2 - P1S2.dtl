@@ -1,0 +1,24 @@
+[signal arg="dapur"]
+[music path="res://Sound/responsibility.mp3" fade="0.0" volume="-10.0" bus="Music"]
+[wait time="3.0"]
+Layla: Oh tidak! Sayurannya jatuh!
+- Mengambil kembali sayurannya.
+	Ibu: Tidak apa-apa, Nak. Lain kali kau akan lebih hati-hati.
+	Karakter utama belajar bahwa kegagalan adalah bagian dari proses belajar.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 3 - P1S2/
+- Membiarkan sayurannya.
+	Ibu: Ehh…ini jangan dibiarkan, ambil sayurnya itu. Jangan sia-siain sayuran.
+	Ibunya menyadari anaknya sudah mulai teledor.
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 3 - P1S2/
+- Melempar sayurnya.
+	Ayah: Kamu mulai kurang ajar yah, sini ikut ayah!
+	Ibu kecewa karena anaknya mulai egois dan ayahnya membawanya pergi dari kebun.
+	[signal arg="-5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 3 - P1S2/

@@ -1,0 +1,197 @@
+[gd_scene load_steps=15 format=3 uid="uid://ca5m1cpa0uror"]
+
+[ext_resource type="Script" path="res://Script/settings.gd" id="1_l5doe"]
+[ext_resource type="Texture2D" uid="uid://bwmli3htkcx5o" path="res://Art/MainMenu/SettingMenu.png" id="2_761yu"]
+[ext_resource type="FontFile" uid="uid://cf13ux5tf7taa" path="res://fonts-master/ttf/DOSIyagiBoldface.ttf" id="4_31hso"]
+[ext_resource type="StyleBox" uid="uid://bwclb02kqrxn5" path="res://Preset/Button.tres" id="4_mkqta"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ynbe2"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ubege"]
+thickness = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a402y"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ee7ly"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_ruwp3"]
+thickness = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hwt76"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e3xvl"]
+
+[sub_resource type="StyleBoxLine" id="StyleBoxLine_6gb78"]
+thickness = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d4obh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_cl5d4"]
+
+[node name="Settings" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l5doe")
+
+[node name="Backdrop" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.784314)
+
+[node name="SettingMenu" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -314.5
+offset_top = -253.0
+offset_right = 314.5
+offset_bottom = 253.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_761yu")
+expand_mode = 1
+
+[node name="MenuText" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 877.0
+offset_top = 328.0
+offset_right = 1027.0
+offset_bottom = 389.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("4_31hso")
+theme_override_font_sizes/font_size = 48
+theme_override_styles/normal = SubResource("StyleBoxEmpty_ynbe2")
+text = "OPTION"
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -245.0
+offset_top = -134.0
+offset_right = 226.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MusicContainer" type="VBoxContainer" parent="VBoxContainer4"]
+layout_mode = 2
+
+[node name="Music" type="Label" parent="VBoxContainer4/MusicContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_31hso")
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="VBoxContainer4/MusicContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_ubege")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_a402y")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_ee7ly")
+max_value = 1.0
+step = 0.001
+
+[node name="SFXContainer" type="VBoxContainer" parent="VBoxContainer4"]
+layout_mode = 2
+
+[node name="SFX" type="Label" parent="VBoxContainer4/SFXContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_31hso")
+text = "SFX"
+
+[node name="SFXSlider" type="HSlider" parent="VBoxContainer4/SFXContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_ruwp3")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_hwt76")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_e3xvl")
+max_value = 1.0
+step = 0.001
+
+[node name="TextSpeedContainer" type="VBoxContainer" parent="VBoxContainer4"]
+layout_mode = 2
+
+[node name="TextSpeed" type="Label" parent="VBoxContainer4/TextSpeedContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_31hso")
+text = "Text Speed"
+
+[node name="TextSlider" type="HSlider" parent="VBoxContainer4/TextSpeedContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxLine_6gb78")
+theme_override_styles/grabber_area = SubResource("StyleBoxEmpty_d4obh")
+theme_override_styles/grabber_area_highlight = SubResource("StyleBoxEmpty_cl5d4")
+max_value = 2.0
+step = 0.001
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 3.0
+offset_top = 192.0
+offset_right = 220.0
+offset_bottom = 232.0
+theme_override_constants/separation = 40
+
+[node name="WindowedBtn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Windowed"
+
+[node name="FullscreenBtn" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+text = "Fullscreen"
+
+[node name="MenuBtn" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -230.0
+offset_top = 132.0
+offset_right = 218.0
+offset_bottom = 172.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 240
+
+[node name="BackBtn" type="Button" parent="MenuBtn"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_31hso")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("4_mkqta")
+theme_override_styles/hover = ExtResource("4_mkqta")
+theme_override_styles/normal = ExtResource("4_mkqta")
+text = "BACK"
+
+[node name="MainMenuBtn" type="Button" parent="MenuBtn"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_31hso")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = ExtResource("4_mkqta")
+theme_override_styles/hover = ExtResource("4_mkqta")
+theme_override_styles/normal = ExtResource("4_mkqta")
+text = "MAIN MENU"
+
+[connection signal="pressed" from="HBoxContainer/WindowedBtn" to="." method="_on_windowed_btn_pressed"]
+[connection signal="pressed" from="HBoxContainer/FullscreenBtn" to="." method="_on_fullscreen_btn_pressed"]
+[connection signal="pressed" from="MenuBtn/BackBtn" to="." method="_on_back_btn_pressed"]
+[connection signal="pressed" from="MenuBtn/MainMenuBtn" to="." method="_on_main_menu_btn_pressed"]

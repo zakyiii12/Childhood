@@ -1,0 +1,210 @@
+[gd_scene load_steps=9 format=3 uid="uid://3llc61vmxooc"]
+
+[ext_resource type="Script" path="res://Dialogic/DialogicStyles/CustomVisualNovelStyle/OverlayHistory/history_layer.gd" id="1_4mqm3"]
+[ext_resource type="PackedScene" uid="uid://cuoywrmvda1yg" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_History/example_history_item.tscn" id="2_x1xgk"]
+[ext_resource type="Texture2D" uid="uid://exr0phy2nrac" path="res://Art/MainMenu/HistoryBg.png" id="3_hm2ej"]
+[ext_resource type="Texture2D" uid="uid://cj1bc5csspfuw" path="res://Art/UI/Button.png" id="3_ja7q0"]
+[ext_resource type="FontFile" uid="uid://cf13ux5tf7taa" path="res://fonts-master/ttf/DOSIyagiBoldface.ttf" id="4_lbxi0"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_4oyv7"]
+content_margin_left = 104.0
+content_margin_top = 64.0
+content_margin_right = 104.0
+content_margin_bottom = 64.0
+texture = ExtResource("3_hm2ej")
+texture_margin_left = 104.0
+texture_margin_top = 64.0
+texture_margin_right = 104.0
+texture_margin_bottom = 64.0
+region_rect = Rect2(74.4383, 20.8632, 1132.22, 678.661)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_adrgs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ekv38"]
+
+[node name="ExampleHistoryScene" type="Control"]
+layout_direction = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+script = ExtResource("1_4mqm3")
+font_use_global_size = false
+font_custom_size = 24
+HistoryItem = ExtResource("2_x1xgk")
+
+[node name="HistoryBox" type="ScrollContainer" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -567.0
+offset_top = -340.0
+offset_right = 566.0
+offset_bottom = 340.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_4oyv7")
+horizontal_scroll_mode = 0
+
+[node name="HistoryLog" type="VBoxContainer" parent="HistoryBox"]
+unique_name_in_owner = true
+layout_direction = 1
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="ShowHistory2" type="TextureRect" parent="."]
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 218.0
+offset_bottom = 113.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("3_ja7q0")
+expand_mode = 1
+
+[node name="ShowHistory" type="Button" parent="."]
+layout_mode = 1
+offset_left = 40.0
+offset_top = 49.0
+offset_right = 228.0
+offset_bottom = 112.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_lbxi0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_adrgs")
+text = " History "
+flat = true
+
+[node name="HideHistory" type="Button" parent="."]
+visible = false
+layout_mode = 1
+offset_left = 50.0
+offset_top = 50.0
+offset_right = 218.0
+offset_bottom = 113.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_lbxi0")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ekv38")
+text = " Return "
+flat = true
+
+[node name="Top" type="TextureRect" parent="."]
+visible = false
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 180.0
+offset_right = 1539.0
+offset_bottom = 265.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Top"]
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 180.0
+offset_right = 1539.0
+offset_bottom = 265.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Top/TextureRect"]
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 180.0
+offset_right = 1539.0
+offset_bottom = 265.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TextureRect" type="TextureRect" parent="Top/TextureRect/TextureRect"]
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 178.0
+offset_right = 1539.0
+offset_bottom = 265.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="Bottom" type="TextureRect" parent="."]
+visible = false
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 814.0
+offset_right = 1539.0
+offset_bottom = 901.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+flip_v = true
+
+[node name="TextureRect2" type="TextureRect" parent="Bottom"]
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 814.0
+offset_right = 1539.0
+offset_bottom = 901.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+flip_v = true
+
+[node name="TextureRect3" type="TextureRect" parent="Bottom/TextureRect2"]
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 814.0
+offset_right = 1539.0
+offset_bottom = 901.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+flip_v = true
+
+[node name="TextureRect4" type="TextureRect" parent="Bottom/TextureRect2/TextureRect3"]
+top_level = true
+z_index = 2
+layout_mode = 0
+offset_left = 319.0
+offset_top = 814.0
+offset_right = 1539.0
+offset_bottom = 901.0
+texture = ExtResource("3_hm2ej")
+expand_mode = 1
+stretch_mode = 1
+flip_v = true
+
+[connection signal="pressed" from="ShowHistory" to="." method="_on_show_history_pressed"]
+[connection signal="pressed" from="HideHistory" to="." method="_on_hide_history_pressed"]

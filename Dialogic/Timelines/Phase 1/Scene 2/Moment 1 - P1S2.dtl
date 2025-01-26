@@ -1,0 +1,25 @@
+[signal arg="ruang_tamu"]
+[music path="res://Sound/responsibility.mp3" fade="0.0" volume="-10.0" bus="Music"]
+[wait time="3.0"]
+Ibu: Kau sudah besar, Nak. Mulailah belajar membantu orang lain.
+- Membantu memetik sayuran
+	Layla: Tentu, Bu. Aku akan memetik yang terbaik!
+	Ibu: Kalau begitu kemarilah kesini. Tolong petik yang itu. Caranya seperti ini.
+	[wait time="2.0"]
+	Ibunya tersenyum bangga, dan karakter utama merasa dihargai.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 2 - P1S2/
+- Pergi dari kebun dan bermain
+	Ibu: Aku tak mau ibu, masih ingin bermain dengan teman-teman.
+	Ibunya sedikit kecewa karena karakter utama mulai egois.
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 2 - P1S2/
+- Mengganggu orang dikebun
+	Karakter utama bermain kesana-kemari dikebun tersebut hingga mengganggu orang dan akhirnya diusir pergi menjauh.
+	[signal arg="-5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 2 - P1S2/

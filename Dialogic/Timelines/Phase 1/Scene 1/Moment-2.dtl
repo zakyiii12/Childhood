@@ -1,0 +1,35 @@
+[signal arg="taman"]
+[music path="res://Sound/childhood_neutral music_01.wav" fade="0.0" volume="-15.0" bus="Music"]
+[wait time="3.0"]
+Kakek: Dahulu kala, desa kita ini dijaga oleh roh-roh penjaga. Mereka menyukai anak-anak yang rajin belajar dan saling membantu.
+- Antusias Mendengarkan
+	Layla: Roh penjaga? Apa mereka masih ada?
+	Kakek: Itu tergantung, Nak. Kalau kau percaya, mereka mungkin akan menunjukkan diri.
+	Layla: Benarkah begitu?
+	Kakek: Iya, Nak.
+	[wait time="3.0"]
+	Karakter Utama mendapatkan pelajaran penting tentang tradisi dan sejarah desanya.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment-3/
+- Tak percaya dan pergi
+	Layla: Roh Penjaga? Pasti kakek menghayal aja nih, mana ada zaman sekarang makhluk gituan.
+	Kakek: Ya sudah kalau tidak percaya, kakek hanya mengingatkan saja.
+	[wait time="3.0"]
+	Tak jauh dari kumpulan kakek tua dan anak-anak itu, karakter utama merasakan tekanan batin hingga kehilangan kesadaran.
+	[signal arg="-5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment-3/
+- Ngobrol dengan teman
+	Layla: Kamu percaya gak dengan Roh Penjaga?
+	"Teman 1": Jujur sih, tidak. Tapi aku percaya saja lah daripada kenapa-kenapa.
+	Layla: Kamu bener, kita harus percaya-percaya aja bisa aman.
+	Kakek: Kalian kalo memang tidak tertarik dengan cerita kakek, sebaiknya pergi saja daripada mengganggu yang lainnya.
+	[wait time="3.0"]
+	Karena terlalu mengganggu sekitarnya yang sedang menyimak cerita kakek tua tersebut, mereka berdua diusir dari kumpulan.
+	[signal arg="-5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment-3/

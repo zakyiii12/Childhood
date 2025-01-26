@@ -1,0 +1,210 @@
+[gd_scene load_steps=8 format=3 uid="uid://dq0iyrofjrmuw"]
+
+[ext_resource type="Texture2D" uid="uid://bat0dtm2pt84" path="res://Art/MainMenu/MainMenuClean.png" id="1_imwm5"]
+[ext_resource type="FontFile" uid="uid://cf13ux5tf7taa" path="res://fonts-master/ttf/DOSIyagiBoldface.ttf" id="2_ny3hw"]
+[ext_resource type="FontFile" uid="uid://dk4x2nrxjrvyr" path="res://fonts-master/ttf/DOSGothic.ttf" id="3_mgvdh"]
+[ext_resource type="Texture2D" uid="uid://cj1bc5csspfuw" path="res://Art/UI/Button.png" id="4_vwwhr"]
+
+[sub_resource type="GDScript" id="GDScript_yf7su"]
+script/source = "extends Control
+
+
+
+func _on_button_pressed() -> void:
+	get_tree().change_scene_to_file(\"res://Scenes/main_menu.tscn\")
+"
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fnuuw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mfefa"]
+
+[node name="Credit" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = SubResource("GDScript_yf7su")
+
+[node name="MainMenuImg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_imwm5")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.788235)
+
+[node name="Sound" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1107.0
+offset_top = 90.0
+offset_right = 1227.0
+offset_bottom = 138.0
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 48
+text = "Music"
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 1107.0
+offset_top = 183.0
+offset_right = 1857.0
+offset_bottom = 896.0
+theme_override_fonts/font = ExtResource("3_mgvdh")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_fnuuw")
+text = "1. mistery mp3
+https://www.youtube.com/watch?v=oh2u7aSxYIU
+BreakingCopyright — Royalty Free Music
+2. Dream mp3
+https://www.youtube.com/watch?v=Mktk7r7IhrI
+ANNTOHES MUSIC
+3. Responsibility mp3
+https://www.youtube.com/watch?v=96OdwBSnoeQ
+Bang NONO
+4. Mystery SFX
+https://www.youtube.com/watch?v=Am4wYTiHHx8
+Sound Central
+5. canon-3.mid
+https://bitmidi.com/canon-3-mid"
+
+[node name="Button2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1543.0
+offset_top = 965.0
+offset_right = 1858.0
+offset_bottom = 1021.0
+texture = ExtResource("4_vwwhr")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1547.0
+offset_top = 965.0
+offset_right = 1847.0
+offset_bottom = 1021.0
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mfefa")
+text = "Back to Main Menu"
+flat = true
+
+[node name="Team" type="Label" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 90.0
+offset_right = 342.0
+offset_bottom = 138.0
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 48
+text = "Our Team"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="Roles" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 150.0
+offset_top = 200.0
+offset_right = 330.0
+offset_bottom = 548.0
+theme_override_constants/separation = 48
+
+[node name="Label" type="Label" parent="Roles"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 32
+text = "Game Programmer :"
+
+[node name="Label2" type="Label" parent="Roles"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 32
+text = "Game Designer / :
+Storywriter"
+
+[node name="Label3" type="Label" parent="Roles"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 32
+text = "Game Artist /   :
+Game Designer"
+
+[node name="Label4" type="Label" parent="Roles"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 32
+text = "Game Artist /   :
+Game Designer"
+
+[node name="Label5" type="Label" parent="Roles"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_ny3hw")
+theme_override_font_sizes/font_size = 32
+text = "Game Designer / :
+Music Composer"
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 200.0
+offset_right = 846.0
+offset_bottom = 232.0
+theme_override_fonts/font = ExtResource("3_mgvdh")
+theme_override_font_sizes/font_size = 32
+text = "Kms. Ahmad Zhaky Muslimin"
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 280.0
+offset_right = 846.0
+offset_bottom = 312.0
+theme_override_fonts/font = ExtResource("3_mgvdh")
+theme_override_font_sizes/font_size = 32
+text = "Muhammad Islam"
+
+[node name="Label4" type="Label" parent="."]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 395.0
+offset_right = 846.0
+offset_bottom = 427.0
+theme_override_fonts/font = ExtResource("3_mgvdh")
+theme_override_font_sizes/font_size = 32
+text = "Nicole Tracy Khoesuma"
+
+[node name="Label5" type="Label" parent="."]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 510.0
+offset_right = 846.0
+offset_bottom = 542.0
+theme_override_fonts/font = ExtResource("3_mgvdh")
+theme_override_font_sizes/font_size = 32
+text = "Reza Risky Ari Gumay"
+
+[node name="Label6" type="Label" parent="."]
+layout_mode = 2
+offset_left = 446.0
+offset_top = 625.0
+offset_right = 846.0
+offset_bottom = 657.0
+theme_override_fonts/font = ExtResource("3_mgvdh")
+theme_override_font_sizes/font_size = 32
+text = "Zasqia Humairo"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

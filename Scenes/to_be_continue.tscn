@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://djpm85lu1ejau"]
+
+[ext_resource type="Script" path="res://Script/to_be_continue.gd" id="1_ngeat"]
+[ext_resource type="Texture2D" uid="uid://bqgkq4hel8227" path="res://Art/Background/ToBeContinueClean.png" id="2_he5ec"]
+[ext_resource type="FontFile" uid="uid://dk4x2nrxjrvyr" path="res://fonts-master/ttf/DOSGothic.ttf" id="3_u4bxc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wlyu8"]
+
+[node name="To Be Continue" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ngeat")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_he5ec")
+
+[node name="TextEdit" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 846.0
+offset_top = 351.0
+offset_right = 1094.0
+offset_bottom = 404.0
+theme_override_fonts/font = ExtResource("3_u4bxc")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wlyu8")
+text = "END PHASE 1"
+
+[node name="TextEdit2" type="TextEdit" parent="."]
+layout_mode = 0
+offset_left = 802.0
+offset_top = 671.0
+offset_right = 1134.0
+offset_bottom = 724.0
+theme_override_fonts/font = ExtResource("3_u4bxc")
+theme_override_font_sizes/font_size = 44
+theme_override_styles/normal = SubResource("StyleBoxEmpty_wlyu8")
+text = "TO BE CONTINUED"

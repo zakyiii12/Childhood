@@ -1,0 +1,313 @@
+[gd_scene load_steps=40 format=3 uid="uid://dpniuw6l8b73r"]
+
+[ext_resource type="Script" path="res://Script/main_game.gd" id="1_w60wr"]
+[ext_resource type="Texture2D" uid="uid://blav64abfuhuv" path="res://Art/Background/Placeholder.png" id="2_ccg0u"]
+[ext_resource type="Texture2D" uid="uid://cjc0oknefo7r0" path="res://Art/Sprite/Sprite/MC/Kid/MC1.png" id="2_itdgp"]
+[ext_resource type="Texture2D" uid="uid://cp2r26fw47f20" path="res://Art/Sprite/Sprite/MC/Kid/MC2.png" id="3_8ejwx"]
+[ext_resource type="Texture2D" uid="uid://di4l77cktm0xa" path="res://Art/Sprite/Sprite/MC/Kid/MC3.png" id="4_v4vu5"]
+[ext_resource type="Texture2D" uid="uid://cyhncx7olsjph" path="res://Art/Sprite/Sprite/MC/Kid/MC4.png" id="5_i2bmw"]
+[ext_resource type="Texture2D" uid="uid://x5b3lx78b7fy" path="res://Art/Sprite/Sprite/MC/Kid/MC5.png" id="6_t3npr"]
+[ext_resource type="Texture2D" uid="uid://dw15rv12spceg" path="res://Art/Sprite/Sprite/MC/Kid/MC6.png" id="7_p7ogr"]
+[ext_resource type="Texture2D" uid="uid://dsphgufn3cr0l" path="res://Art/Sprite/Sprite/MC/Kid/MC7.png" id="8_kfut7"]
+[ext_resource type="Texture2D" uid="uid://n6h78tydih3y" path="res://Art/Sprite/Sprite/MC/Kid/MC8.png" id="9_uu3e4"]
+[ext_resource type="Texture2D" uid="uid://dl28vgdqoe24l" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble1.png" id="10_xocv0"]
+[ext_resource type="Texture2D" uid="uid://bexyg40g8s3r8" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble2.png" id="11_f4f8v"]
+[ext_resource type="Texture2D" uid="uid://nmpblq0n78ro" path="res://Art/Sprite/Sprite/Bubble Meter/Balanced/MeterB1.png" id="11_t664w"]
+[ext_resource type="Texture2D" uid="uid://btm6gib4ro0so" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble3.png" id="12_277g6"]
+[ext_resource type="Texture2D" uid="uid://dycy5le485nhv" path="res://Art/Sprite/Sprite/Bubble Meter/Balanced/MeterB2.png" id="12_h3fbe"]
+[ext_resource type="Texture2D" uid="uid://wcqef8hayk68" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble4.png" id="13_ekkgg"]
+[ext_resource type="Texture2D" uid="uid://luugkykak8wh" path="res://Art/Sprite/Sprite/Bubble Meter/Balanced/MeterB3.png" id="13_qgqla"]
+[ext_resource type="Texture2D" uid="uid://b36175upikea1" path="res://Art/Sprite/Sprite/Bubble Meter/Balanced/MeterB4.png" id="14_7bhqg"]
+[ext_resource type="Texture2D" uid="uid://cqpdr5i237qmp" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble5.png" id="14_cb6jm"]
+[ext_resource type="Texture2D" uid="uid://vfdciurb65w3" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble6.png" id="15_52g1i"]
+[ext_resource type="Texture2D" uid="uid://batislk4ulmop" path="res://Art/Sprite/Sprite/Bubble Meter/High/MeterH1.png" id="15_w8juo"]
+[ext_resource type="Texture2D" uid="uid://bbaeyswu0s7g6" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble7.png" id="16_8wrxx"]
+[ext_resource type="Texture2D" uid="uid://cru0yet0w5sp3" path="res://Art/Sprite/Sprite/Bubble Meter/High/MeterH2.png" id="16_nv0vi"]
+[ext_resource type="Texture2D" uid="uid://ik1ggfc6tojo" path="res://Art/Sprite/Sprite/Bubble Meter/High/MeterH3.png" id="17_1p0dp"]
+[ext_resource type="Texture2D" uid="uid://dwn4ju1nga4xl" path="res://Art/Sprite/Sprite/Bubble/Neutral/Bubble8.png" id="17_3niew"]
+[ext_resource type="Texture2D" uid="uid://gotio7qwla6g" path="res://Art/Sprite/Sprite/Bubble Meter/High/MeterH4.png" id="18_cg2y2"]
+[ext_resource type="Texture2D" uid="uid://drbem5v2cn4fb" path="res://Art/Sprite/Sprite/Bubble Meter/Low/MeterL1.png" id="19_mo7ri"]
+[ext_resource type="Texture2D" uid="uid://ce7kdlw2qspcu" path="res://Art/Sprite/Sprite/Bubble Meter/Low/MeterL2.png" id="20_ttk4x"]
+[ext_resource type="Texture2D" uid="uid://dgp7qyuc3lglg" path="res://Art/Sprite/Sprite/Bubble Meter/Low/MeterL3.png" id="21_bia28"]
+[ext_resource type="Texture2D" uid="uid://daabcpq76qu2p" path="res://Art/Sprite/Sprite/Bubble Meter/Low/MeterL4.png" id="22_vs0xw"]
+[ext_resource type="Texture2D" uid="uid://cx0joy6g8dfj0" path="res://Art/Sprite/Sprite/Bubble Meter/Too High/MeterTH.png" id="23_dvsw3"]
+[ext_resource type="FontFile" uid="uid://cf13ux5tf7taa" path="res://fonts-master/ttf/DOSIyagiBoldface.ttf" id="28_dwoe8"]
+[ext_resource type="Texture2D" uid="uid://cj1bc5csspfuw" path="res://Art/UI/Button.png" id="28_ukxeb"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7hhwd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_itdgp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_8ejwx")
+}, {
+"duration": 2.0,
+"texture": ExtResource("4_v4vu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_i2bmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_t3npr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_p7ogr")
+}, {
+"duration": 2.0,
+"texture": ExtResource("8_kfut7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_uu3e4")
+}],
+"loop": true,
+"name": &"Fase1",
+"speed": 3.3
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_hwp57"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_t664w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_h3fbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qgqla")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_7bhqg")
+}],
+"loop": true,
+"name": &"balanced",
+"speed": 1.4
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_w8juo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_nv0vi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_1p0dp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cg2y2")
+}],
+"loop": true,
+"name": &"high",
+"speed": 1.4
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_mo7ri")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ttk4x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_bia28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_vs0xw")
+}],
+"loop": true,
+"name": &"low",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("23_dvsw3")
+}],
+"loop": true,
+"name": &"too_high",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": true,
+"name": &"very_low",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_roahs"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("10_xocv0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_f4f8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_277g6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ekkgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cb6jm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_52g1i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_8wrxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_3niew")
+}],
+"loop": true,
+"name": &"default",
+"speed": 1.2
+}]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dmf6c"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ylf5m"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hbpmd"]
+
+[node name="MainGame" type="Control"]
+z_index = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_w60wr")
+
+[node name="BgLayer" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Bg" type="TextureRect" parent="BgLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_ccg0u")
+
+[node name="Layla" type="Node2D" parent="BgLayer"]
+position = Vector2(960, 520)
+
+[node name="Child" type="AnimatedSprite2D" parent="BgLayer/Layla"]
+position = Vector2(1, 6)
+sprite_frames = SubResource("SpriteFrames_7hhwd")
+animation = &"Fase1"
+autoplay = "Fase1"
+frame_progress = 0.758015
+
+[node name="BubbleMeter" type="AnimatedSprite2D" parent="BgLayer/Layla"]
+modulate = Color(1, 1, 1, 0.509804)
+position = Vector2(1, 6)
+sprite_frames = SubResource("SpriteFrames_hwp57")
+animation = &"very_low"
+autoplay = "balanced"
+
+[node name="Bubble" type="AnimatedSprite2D" parent="BgLayer/Layla"]
+self_modulate = Color(1, 1, 1, 0.784314)
+position = Vector2(1, 6)
+sprite_frames = SubResource("SpriteFrames_roahs")
+autoplay = "default"
+frame_progress = 0.505419
+
+[node name="UI" type="CanvasLayer" parent="."]
+layer = 2
+
+[node name="PauseBtnTexture" type="TextureRect" parent="UI"]
+process_mode = 3
+offset_left = 1435.0
+offset_top = 50.0
+offset_right = 1589.0
+offset_bottom = 113.0
+texture = ExtResource("28_ukxeb")
+expand_mode = 1
+
+[node name="SaveBtnTexture" type="TextureRect" parent="UI"]
+offset_left = 1609.0
+offset_top = 50.0
+offset_right = 1727.0
+offset_bottom = 113.0
+texture = ExtResource("28_ukxeb")
+expand_mode = 1
+
+[node name="LoadBtnTexture" type="TextureRect" parent="UI"]
+offset_left = 1751.0
+offset_top = 50.0
+offset_right = 1879.0
+offset_bottom = 113.0
+texture = ExtResource("28_ukxeb")
+expand_mode = 1
+
+[node name="Container" type="HBoxContainer" parent="UI"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -485.0
+offset_top = 49.0
+offset_right = -41.0
+offset_bottom = 112.0
+grow_horizontal = 0
+theme_override_constants/separation = 20
+
+[node name="PauseBtn" type="Button" parent="UI/Container"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("28_dwoe8")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_dmf6c")
+text = " PAUSE "
+flat = true
+
+[node name="SaveBtn" type="Button" parent="UI/Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("28_dwoe8")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ylf5m")
+text = " Save "
+flat = true
+
+[node name="LoadBtn" type="Button" parent="UI/Container"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("28_dwoe8")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hbpmd")
+text = " Load "
+flat = true
+
+[node name="TopLayer" type="CanvasLayer" parent="."]
+layer = 3
+visible = false
+
+[node name="LoadBtnTexture" type="TextureRect" parent="TopLayer"]
+offset_left = 1751.0
+offset_top = 50.0
+offset_right = 1879.0
+offset_bottom = 113.0
+texture = ExtResource("28_ukxeb")
+expand_mode = 1
+
+[node name="LoadBtn" type="Button" parent="TopLayer"]
+process_mode = 3
+offset_left = 1751.0
+offset_top = 56.0
+offset_right = 1879.0
+offset_bottom = 104.0
+theme_override_fonts/font = ExtResource("28_dwoe8")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/focus = SubResource("StyleBoxEmpty_hbpmd")
+text = " Load "
+flat = true
+
+[node name="MiniGameLayer" type="CanvasLayer" parent="."]
+layer = 5
+
+[connection signal="pressed" from="UI/Container/PauseBtn" to="." method="_on_pause_pressed"]
+[connection signal="pressed" from="UI/Container/SaveBtn" to="." method="_on_save_btn_pressed"]
+[connection signal="pressed" from="UI/Container/LoadBtn" to="." method="_on_load_btn_pressed"]
+[connection signal="pressed" from="TopLayer/LoadBtn" to="." method="_on_load_btn_pressed"]

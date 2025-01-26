@@ -1,0 +1,25 @@
+[signal arg="lapangan"]
+[music path="res://Sound/dream.mp3" fade="0.0" volume="-10.0" bus="Music"]
+[wait time="3.0"]
+"Teman 2": Kalian ingin jadi apa saat besar nanti?
+"Teman 3": Aku hanya ingin tetap di desa dan menjadi seperti ayahku.
+- Ingin menjadi orang kaya
+	Layla: Aku ingin pergi ke kota besar dan membuat sesuatu yang hebat!
+	Teman-temannya sangat terkagum dengan impian karakter utama.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 2 - P1S3/
+- Ingin menjadi petani seperti ayah
+	Layla: Aku sepertinya ingin tetap di desa menjadi petani seperti orang tuaku.
+	Teman-temannya sangat terkagum dengan dedikasinya karakter utama.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 2 - P1S3/
+- Ingin menjadi kapal laut
+	Layla: Aku ingin menjadi kapal laut yang sangat besar sekali!!
+	Teman-temannya mulai menjauhi karakter utama hingga ditinggal sendirian.
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 2 - P1S3/

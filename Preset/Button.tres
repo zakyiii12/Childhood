@@ -1,0 +1,11 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://bwclb02kqrxn5"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gsmbf"]
+load_path = "res://.godot/imported/Button.png-f60662a2f03a72888e30f8c8e9839f73.ctex"
+
+[resource]
+texture = SubResource("CompressedTexture2D_gsmbf")
+expand_margin_left = 20.0
+expand_margin_top = 12.0
+expand_margin_right = 25.0
+expand_margin_bottom = 12.0

@@ -1,0 +1,352 @@
+[gd_scene load_steps=14 format=3 uid="uid://b7qqefacwnhh8"]
+
+[ext_resource type="Script" path="res://Script/main_menu.gd" id="1_msv4l"]
+[ext_resource type="Texture2D" uid="uid://cj1bc5csspfuw" path="res://Art/UI/Button.png" id="2_riqr5"]
+[ext_resource type="Texture2D" uid="uid://bat0dtm2pt84" path="res://Art/MainMenu/MainMenuClean.png" id="2_u10s4"]
+[ext_resource type="FontFile" uid="uid://cf13ux5tf7taa" path="res://fonts-master/ttf/DOSIyagiBoldface.ttf" id="3_8myda"]
+[ext_resource type="Texture2D" uid="uid://degnjgpomykfi" path="res://Art/MainMenu/TitleMainMenu.png" id="3_jgpiu"]
+[ext_resource type="AudioStream" uid="uid://dtg07w06eleqf" path="res://Sound/childhood_neutral music_01.wav" id="6_wqcqi"]
+
+[sub_resource type="Animation" id="Animation_2ujtn"]
+resource_name = "Begin"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Title:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.8)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(2, -0.25, 0, 0.25, 0, 1.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 0.8)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Title/TitleMainMenu:self_modulate:r")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Title/TitleMainMenu:self_modulate:g")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Title/TitleMainMenu:self_modulate:b")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Title/TitleMainMenu:self_modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0, 1)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Menu:position:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(1088, -0.25, 0, 0.25, 0, 908, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1.2, 1.7)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureBtn:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0, 0),
+"points": PackedFloat32Array(180, -0.25, 0, 0.25, 0, 0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(1.2, 1.7)
+}
+
+[sub_resource type="Animation" id="Animation_vln8u"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Title:scale:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Title:scale:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1.5, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Title/TitleMainMenu:self_modulate:r")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Title/TitleMainMenu:self_modulate:g")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Title/TitleMainMenu:self_modulate:b")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "bezier"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Title/TitleMainMenu:self_modulate:a")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/6/type = "bezier"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Menu:position:y")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(908, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/7/type = "bezier"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("TextureBtn:position:y")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ej1fx"]
+_data = {
+"Begin": SubResource("Animation_2ujtn"),
+"RESET": SubResource("Animation_vln8u")
+}
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_btm21"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6y7yw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ja3td"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ipyi1"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_msv4l")
+
+[node name="MainMenuAnim" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ej1fx")
+}
+
+[node name="MainMenuImg" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_u10s4")
+
+[node name="Title" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 0.57
+anchor_right = 0.5
+anchor_bottom = 0.57
+offset_left = -4.0
+offset_top = 0.399963
+offset_right = 36.0
+offset_bottom = 40.4
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(1.5, 1.5)
+
+[node name="TitleMainMenu" type="TextureRect" parent="Title"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -637.0
+offset_top = -411.0
+offset_right = 603.0
+offset_bottom = 269.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_jgpiu")
+
+[node name="TextureBtn" type="Control" parent="."]
+anchors_preset = 0
+
+[node name="StartGameTxt" type="TextureRect" parent="TextureBtn"]
+layout_mode = 0
+offset_left = 454.0
+offset_top = 905.0
+offset_right = 627.0
+offset_bottom = 986.0
+texture = ExtResource("2_riqr5")
+expand_mode = 1
+
+[node name="LoadGameTxt" type="TextureRect" parent="TextureBtn"]
+layout_mode = 0
+offset_left = 722.0
+offset_top = 905.0
+offset_right = 929.0
+offset_bottom = 986.0
+texture = ExtResource("2_riqr5")
+expand_mode = 1
+
+[node name="OptionGameTxt" type="TextureRect" parent="TextureBtn"]
+layout_mode = 0
+offset_left = 1019.0
+offset_top = 905.0
+offset_right = 1238.0
+offset_bottom = 988.0
+texture = ExtResource("2_riqr5")
+expand_mode = 1
+
+[node name="QuitGameTxt" type="TextureRect" parent="TextureBtn"]
+layout_mode = 0
+offset_left = 1322.0
+offset_top = 905.0
+offset_right = 1464.0
+offset_bottom = 988.0
+texture = ExtResource("2_riqr5")
+expand_mode = 1
+
+[node name="Menu" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -502.0
+offset_top = -172.0
+offset_right = 502.0
+offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 100
+
+[node name="StartGameBtn" type="Button" parent="Menu"]
+process_mode = 3
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8myda")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxEmpty_btm21")
+text = "START"
+flat = true
+
+[node name="CreditGameBtn" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8myda")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6y7yw")
+text = "CREDIT"
+flat = true
+
+[node name="OptionGameBtn" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8myda")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ja3td")
+text = "OPTION"
+flat = true
+
+[node name="QuitGameBtn" type="Button" parent="Menu"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("3_8myda")
+theme_override_font_sizes/font_size = 64
+theme_override_styles/focus = SubResource("StyleBoxEmpty_ipyi1")
+text = "QUIT"
+flat = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_wqcqi")
+volume_db = -5.0
+autoplay = true
+
+[connection signal="pressed" from="Menu/StartGameBtn" to="." method="_on_start_game_btn_pressed"]
+[connection signal="pressed" from="Menu/CreditGameBtn" to="." method="_on_credit_game_btn_pressed"]
+[connection signal="pressed" from="Menu/OptionGameBtn" to="." method="_on_option_game_btn_pressed"]
+[connection signal="pressed" from="Menu/QuitGameBtn" to="." method="_on_quit_game_btn_pressed"]

@@ -1,0 +1,11 @@
+[signal arg="taman"]
+[music path="res://Sound/childhood_neutral music_01.wav" fade="0.0" volume="-15.0" bus="Music"]
+[wait time="3.0"]
+Layla: Mari kita tetap bersama, apapun yang terjadi!
+Semua: Ya, kita janji!
+[signal arg="+5"]
+[background arg="res://Art/Ending/Phase1End.png" fade="4.0"]
+[wait time="6.0"]
+Janji ini menjadi simbol ikatan yang kuat, meskipun kehidupan akan membawa mereka ke jalan yang berbeda.
+[wait time="3.0"]
+[signal arg="end_phase_1"]

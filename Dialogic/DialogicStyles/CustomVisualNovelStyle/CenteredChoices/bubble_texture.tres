@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://db3al4xc1l6w0"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_vo32y"]
+load_path = "res://.godot/imported/Bubble1.png-e3b2b3178aab702a67b735e81e25d0d6.ctex"
+
+[resource]
+texture = SubResource("CompressedTexture2D_vo32y")

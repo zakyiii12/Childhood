@@ -1,0 +1,33 @@
+[signal arg="lapangan"]
+[music path="res://Sound/mistery.MP3" fade="0.0" volume="-10.0" bus="Music"]
+[wait time="3.0"]
+Layla: Apa ini? Kenapa benda ini bersinar?
+- Diskusi dengan teman
+	"Teman 1": Mungkin itu tanda dari roh penjaga!"
+	Layla: Benar juga. Kita apakan?
+	"Teman 1": Kita beritahu kakek tua itu, Ayo!
+	Karakter utama dan temannya pergi melaporkan benda itu dan mengajak kakek tua tersebut.
+	[signal arg="+5"]
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 3 - P1S3/
+- Meninggalkan benda itu
+	"Teman 1": Mungkin itu tanda dari roh penjaga!
+	Layla: Benar juga. Tapi, siapa pedulil.
+	Layla: Yuk, main lagi.
+	Karakter utama mengajak temannya untuk pergi bermain lagi meninggalkan benda itu tetap disana.
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 3 - P1S3/
+- Mengambil benda itu
+	"Teman 1": Mungkin itu tanda dari roh penjaga!
+	Layla: Benar juga. Kita apakan?
+	"Teman 1": Kita ambil saja gimana?
+	Layla: Ide bagus, ayo kita ambil.
+	Semua: satu, dua, tiga
+	[music path="res://Sound/childhood_bad ending.wav" fade="0.0" volume="-10.0" bus="Music"]
+	[background arg="res://Art/Ending/End4.png" fade="4.0"]
+	[wait time="6.0"]
+	Karakter utama dan temannya mengambil benda itu. Kemudian, secara tak sengaja keduanya berpindah ke dunia lain. Di dunia dimana tak seorangpun mengenali mereka berdua.
+	[wait time="0.7"]
+	[signal arg="end"]

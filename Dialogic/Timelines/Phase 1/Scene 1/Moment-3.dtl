@@ -1,0 +1,32 @@
+[signal arg="lapangan"]
+[music path="res://Sound/childhood_neutral music_01.wav" fade="0.0" volume="-15.0" bus="Music"]
+[wait time="3.0"]
+"Teman 3": Kita adakan lomba, siapa yang menang akan dapat hadiah dari Ibu Rika!
+- Semangat Ikut Permainan
+	Layla: Aku pasti menang kali ini!
+	"Teman 1": Tidak, aku pasti menang untuk ini!
+	[signal arg="mini-game-phase-1"]
+	[wait time="1.0"]
+	if {result} == true:
+		Karakter utama tersenyum puas saat tantangan terakhir berhasil diselesaikan. Sebuah batu kecil, simbol masa kecilnya, diberikan kepadanya sebagai hadiah. Ia menggenggamnya erat, merasa percaya diri dan penuh kebahagiaan.
+	elif {result} == false:
+		Karakter utama membanting tangannya ke meja, menuduh temannya curang. Pertengkaran pun terjadi, dengan nada tinggi dan saling menyalahkan. Persahabatan mereka terguncang oleh kekalahan ini.
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 1 - P1S2/
+- Pergi Tidak Tertarik
+	Layla: Tidak, aku tak mau ikut lombanya. Dah
+	"Teman 1": Ya sudah kalo tidak mau, jangan minta-minta yah nanti.
+	Karakter utama menjauh dari kumpulan dan duduk di bawah pohon besar
+	[wait time="1.5"]
+	[signal arg="transition"]
+	jump Moment 1 - P1S2/
+- Mencelakai Teman
+	Layla: (menyiapkan jebakan untuk temannya)
+	Semua: Tolong!
+	[music path="res://Sound/childhood_bad ending.wav" fade="0.0" volume="-10.0" bus="Music"]
+	[background arg="res://Art/Ending/End2.png" fade="4.0"]
+	[wait time="6.0"]
+	Permainan untuk perlombaan kecil yang awalnya menyenangkan menjadi sebuah bencana kecil dimana teman-temannya sedikit terluka. Karakter utama akhirnya ditangkap.
+	[wait time="0.7"]
+	[signal arg="end"]

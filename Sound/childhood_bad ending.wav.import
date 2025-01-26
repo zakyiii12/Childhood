@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://qum8e3y3mg88"
+path="res://.godot/imported/childhood_bad ending.wav-fe2ae8d52183e8862c8c9aaa8b450058.sample"
+
+[deps]
+
+source_file="res://Sound/childhood_bad ending.wav"
+dest_files=["res://.godot/imported/childhood_bad ending.wav-fe2ae8d52183e8862c8c9aaa8b450058.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
